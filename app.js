@@ -1209,12 +1209,19 @@ function setImageExpanded(expanded) {
   refs.zoomExpandButton.setAttribute("aria-pressed", String(imageExpanded));
   refs.zoomExpandButton.textContent = imageExpanded ? "ออก" : "เต็มภาพ";
   refs.zoomExpandButton.setAttribute("aria-label", imageExpanded ? "ออกจากโหมดดูภาพเต็มพื้นที่" : "ดูภาพเต็มพื้นที่");
+  refs.zoomStage.setAttribute("aria-label", imageExpanded ? "พื้นที่ภาพ กดที่ภาพหรือกด Enter เพื่อออกจากโหมดดูภาพเต็มพื้นที่" : "พื้นที่ภาพ กดที่ภาพหรือกด Enter เพื่อดูเต็มพื้นที่");
+  refs.detailImage.title = imageExpanded ? "กดเพื่อออกจากโหมดดูเต็มภาพ" : "กดเพื่อดูเต็มภาพ";
   window.setTimeout(applyZoomSize, 0);
   refs.zoomStage.focus({ preventScroll: true });
 }
 
 function toggleImageExpanded() {
   setImageExpanded(!imageExpanded);
+}
+
+function handleImageClick(event) {
+  if (!activeArtwork || imageZoom > 1 || event.target !== refs.detailImage) return;
+  toggleImageExpanded();
 }
 
 function openDetail(slug) {
@@ -1336,6 +1343,10 @@ function handleKeyboard(event) {
     event.preventDefault();
     resetImageZoom();
   }
+  if ((event.key === "Enter" || event.key === " ") && document.activeElement === refs.zoomStage && imageZoom <= 1) {
+    event.preventDefault();
+    toggleImageExpanded();
+  }
 }
 
 let revealObserver = null;
@@ -1403,7 +1414,7 @@ function init() {
   refs.zoomExpandButton.addEventListener("click", toggleImageExpanded);
   refs.zoomSlider.addEventListener("input", () => setImageZoom(Number(refs.zoomSlider.value)));
   refs.detailImage.addEventListener("load", applyZoomSize);
-  refs.detailImage.addEventListener("dblclick", toggleImageExpanded);
+  refs.detailImage.addEventListener("click", handleImageClick);
   refs.zoomStage.addEventListener("pointerdown", startImageDrag);
   refs.zoomStage.addEventListener("pointermove", moveImageDrag);
   refs.zoomStage.addEventListener("pointerup", endImageDrag);
