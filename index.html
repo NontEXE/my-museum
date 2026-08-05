@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NONT — Inner Gallery</title>
+    <meta name="description" content="A private gallery of silence, shadow, endurance and becoming.">
+    <meta name="theme-color" content="#11110d">
+    <meta property="og:title" content="NONT — Inner Gallery">
+    <meta property="og:description" content="A private gallery of silence, shadow, endurance and becoming.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/artworks/pine-trees-detail.webp">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NONT Inner Gallery home">
+        <span>NONT</span>
+        <small>INNER GALLERY</small>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-line"></span>
+        <span class="sr-only">เปิดเมนู</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#gallery">Gallery</a>
+        <a href="#self">Self</a>
+        <a href="#tyler">Tyler</a>
+        <a href="#journey">Journey</a>
+        <a href="#about">About</a>
+        <a class="bookmark-nav" href="#gallery" data-filter-link="saved">เก็บไว้ <span data-bookmark-count>0</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/artworks/pine-trees-detail.webp"
+          width="2400"
+          height="1123"
+          alt="ฉากกั้นญี่ปุ่นแสดงต้นสนหลายต้นเลือนหายอยู่ท่ามกลางหมอกสีขาว">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">A PRIVATE COLLECTION OF THE INNER WORLD</p>
+          <h1 id="hero-title">ห้องจัดแสดงของสิ่งที่ผมยังพูดไม่หมด</h1>
+          <p>
+            ภาพเหล่านี้ไม่ใช่เพียงสิ่งที่ผมชอบมอง<br>
+            แต่มันเป็นภาษาของความเงียบที่หล่อเลี้ยงผม<br>
+            เสียงของ Tyler ที่ผลักและปกป้องผมอย่างรุนแรง<br>
+            และเส้นทางที่ผมยังเลือกเดินต่อ<br>
+            แม้ปลายทางจะถูกหมอกซ่อนอยู่ก็ตาม
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#gallery">เข้าสู่ห้องจัดแสดง</a>
+            <span>20 works · Self · Tyler · The Journey</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-pad reveal" aria-labelledby="intro-title">
+        <div class="reading-column">
+          <p class="section-kicker">Inner Map</p>
+          <h2 id="intro-title">นี่ไม่ใช่คอลเลกชันของภาพที่สวยที่สุด</h2>
+          <p>
+            แต่เป็นคอลเลกชันของภาพที่มองเห็นบางสิ่งในตัวผมได้ชัดที่สุด
+            บางภาพพูดแทนความเงียบ บางภาพรับรู้อำนาจของความโกรธ
+            บางภาพเตือนว่าความเข้มแข็งสามารถกลายเป็นกรงได้
+            และบางภาพเพียงนั่งอยู่ข้างผม เพื่อบอกว่าแม้ชีวิตจะยังไม่มีคำตอบ
+            เรื่องราวก็ยังไม่จบลงตรงนี้
+          </p>
+        </div>
+      </section>
+
+      <section class="daily section-pad reveal" aria-labelledby="daily-title">
+        <div class="section-heading">
+          <p class="section-kicker">Today</p>
+          <h2 id="daily-title">ภาพที่กลับมาหาผมในวันนี้</h2>
+        </div>
+        <div class="daily-artwork" data-daily-artwork>
+          <p>กำลังเปิดห้องจัดแสดงของวันนี้...</p>
+        </div>
+      </section>
+
+      <section class="gallery-shell section-pad" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="section-kicker">The Collection</p>
+          <h2 id="gallery-title">Gallery</h2>
+        </div>
+        <div class="gallery-layout">
+          <aside class="gallery-tools" aria-label="Gallery filters">
+            <button type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+            <button type="button" data-filter="self" aria-pressed="false">ตัวผม</button>
+            <button type="button" data-filter="tyler" aria-pressed="false">Tyler</button>
+            <button type="button" data-filter="journey" aria-pressed="false">เส้นทางชีวิต</button>
+            <button type="button" data-filter="saved" aria-pressed="false">เก็บไว้ใกล้ใจ</button>
+          </aside>
+          <div>
+            <div class="gallery-status" data-gallery-status aria-live="polite"></div>
+            <div class="masonry-gallery" data-gallery></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-pad reveal" id="about" aria-labelledby="about-title">
+        <div class="reading-column">
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">เกี่ยวกับห้องจัดแสดงนี้</h2>
+          <p>
+            ผมไม่ได้เลือกภาพเหล่านี้เพราะมันให้คำตอบกับชีวิต
+            ผมเลือกเพราะมันกล้าที่จะอยู่กับคำถามเดียวกับผม
+          </p>
+          <p>
+            ที่นี่มีทั้งความสงบซึ่งไม่เคยว่างเปล่า
+            ความโกรธที่เกิดขึ้นเพื่อปกป้องบาดแผล
+            ความสมบูรณ์แบบที่บางครั้งกัดกินสิ่งซึ่งมันพยายามรักษา
+            และความอดทนที่ไม่ได้ส่งเสียงดัง
+            แต่ยังพาผมตื่นขึ้นมาใช้ชีวิตและสร้างบางสิ่งต่อในทุกวัน
+          </p>
+          <p>
+            Tyler ไม่ใช่ปีศาจที่ผมต้องกำจัด
+            เขาคือผู้พิทักษ์ที่เคยเรียนรู้ว่าความรุนแรงคือวิธีเดียวในการรักษาผมไว้
+            ห้องจัดแสดงนี้จึงไม่ได้สร้างขึ้นเพื่อขับไล่เขา
+            แต่เพื่อมอบตำแหน่งใหม่ให้เขา ให้ยืนอยู่ข้างผม ไม่ใช่ถือพวงมาลัยแทนผม
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="detail-layer" data-detail-layer hidden aria-hidden="true">
+      <div class="detail-backdrop" data-close-detail></div>
+      <article class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <div class="detail-media">
+          <button class="detail-close mobile-close" type="button" data-close-detail aria-label="กลับสู่ Gallery">กลับสู่ Gallery</button>
+          <img data-detail-image src="" width="1" height="1" alt="">
+        </div>
+        <div class="detail-copy" tabindex="-1">
+          <div class="detail-topline">
+            <span data-detail-counter></span>
+            <button class="bookmark-button" type="button" data-bookmark-button aria-pressed="false" aria-label="เก็บภาพนี้ไว้ใกล้ใจ">เก็บไว้ใกล้ใจ</button>
+          </div>
+          <p class="section-kicker" data-detail-themes></p>
+          <h2 id="detail-title" data-detail-title></h2>
+          <p class="detail-meta" data-detail-meta></p>
+          <p class="opening-line" data-detail-opening></p>
+          <section aria-labelledby="meaning-title">
+            <h3 id="meaning-title">ภาพนี้มองเห็นอะไรในตัวผม</h3>
+            <div data-detail-meaning></div>
+          </section>
+          <section aria-labelledby="origin-title">
+            <h3 id="origin-title">ที่มาของภาพ</h3>
+            <div data-detail-origin></div>
+          </section>
+          <blockquote data-detail-quote></blockquote>
+          <dl class="credit-list">
+            <dt>Artwork:</dt>
+            <dd data-credit-artwork></dd>
+            <dt>Artist:</dt>
+            <dd data-credit-artist></dd>
+            <dt>Created:</dt>
+            <dd data-credit-year></dd>
+            <dt>Image source:</dt>
+            <dd>Personal archive supplied by the gallery owner.</dd>
+          </dl>
+          <div class="detail-actions">
+            <button type="button" data-prev-artwork aria-label="เปิดภาพก่อนหน้า">Previous</button>
+            <button type="button" data-next-artwork aria-label="เปิดภาพถัดไป">Next</button>
+            <button type="button" data-close-detail aria-label="กลับสู่ Gallery">กลับสู่ Gallery</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="กลับขึ้นด้านบน">↑</button>
+
+    <footer class="site-footer">
+      <p>NONT — INNER GALLERY</p>
+      <span>A private archive of silence, shadow and becoming.</span>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
