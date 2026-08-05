@@ -2,6 +2,8 @@
 
 เว็บไซต์แกลเลอรีศิลปะส่วนตัวแบบ static ใช้เฉพาะ Plain HTML, CSS และ Vanilla JavaScript ไม่มี framework และไม่มี build step
 
+เวอร์ชันปัจจุบันมีงานศิลปะ 30 ชิ้น ครอบคลุมหมวด Self, Tyler, Journey, Love และ Inheritance
+
 ## วิธีเปิดเว็บ
 
 เปิดผ่าน local static server เพื่อให้ path ของรูปและ hash routing ทำงานเหมือนตอน deploy:

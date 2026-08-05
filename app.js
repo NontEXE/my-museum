@@ -598,13 +598,339 @@ const artworks = [
         "height": 2400
       }
     }
+  },
+  {
+    "index": 21,
+    "file": "Edvard_Munch_-_Vampire_(1895)_-_Google_Art_Project.jpg",
+    "slug": "love-and-pain-vampire",
+    "title": "Love and Pain",
+    "displayTitle": "Love and Pain (Vampire)",
+    "artist": "Edvard Munch",
+    "year": "ราว 1893",
+    "themes": [
+      "love",
+      "self"
+    ],
+    "shortLine": "ความรักอาจเป็นทั้งที่พักพิงและสถานที่ซึ่งผมเปราะบางที่สุด",
+    "opening": "ผมต้องการอ้อมกอดที่ผมสามารถวางเกราะลงได้",
+    "personalMeaning": "หญิงสาวในภาพโอบชายคนหนึ่งไว้\nศีรษะของเขาซบลงบนอกของเธอ\nผมสีแดงของเธอไหลลงมาราวกับโอบคลุมเขาไว้ทั้งหมด\nมันจึงเป็นได้ทั้งภาพของการปลอบโยน\nการยอมวางตัวลงในความรัก\nและความเสี่ยงที่จะปล่อยให้หัวใจของตนเองอยู่ในมือของใครอีกคน\n\nนี่คือความรักในแบบที่ลึกสำหรับผม\nไม่ใช่การอยู่ใกล้กันเพียงผิวเผิน\nแต่เป็นความสัมพันธ์ที่ผมสามารถหยุดพิสูจน์ตัวเองชั่วคราว\nและยอมให้ตัวเองอ่อนแรงได้โดยไม่ต้องกลัวว่าจะถูกตัดสิน\n\nแต่ความลึกแบบเดียวกันนี้เอง\nทำให้ความรักกลายเป็นสถานที่ซึ่งบาดแผลง่ายที่สุด\nยิ่งวางเกราะลงได้มากเพียงใด\nการสูญเสียก็ยิ่งแตะถึงส่วนลึกภายในมากเท่านั้น\n\nภาพนี้เตือนผมว่า\nความรักที่ลึกไม่ใช่สิ่งผิด\nผมเพียงต้องไม่ยกชีวิตทั้งหมดให้ใครถือไว้\nจนลืมว่าผมเองก็ยังต้องเป็นบ้านให้หัวใจตัวเองด้วย",
+    "origin": "ผลงานของ Edvard Munch ชิ้นนี้เดิมมักถูกเรียกว่า Love and Pain\nก่อนที่ชื่อ Vampire จะได้รับความนิยมในภายหลัง\nภาพจึงเปิดพื้นที่ให้ตีความได้ทั้งในมุมของความใกล้ชิด\nการปลอบโยน การยอมจำนน และการถูกกลืนกินทางอารมณ์",
+    "dailyQuote": "ผมสามารถรักอย่างลึกซึ้งได้ โดยไม่จำเป็นต้องหายไปจากตัวเอง",
+    "alt": "หญิงสาวผมแดงโอบชายคนหนึ่งที่ซบศีรษะลงกับอกของเธอในบรรยากาศมืดหม่น",
+    "creditArtwork": "Love and Pain (Vampire)",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/love-and-pain-vampire-thumb.webp",
+        "width": 1000,
+        "height": 818
+      },
+      "detail": {
+        "src": "assets/artworks/love-and-pain-vampire-detail.webp",
+        "width": 2400,
+        "height": 1964
+      }
+    }
+  },
+  {
+    "index": 22,
+    "file": "The Lovers — René Magritte, 1928.jpg",
+    "slug": "the-lovers",
+    "title": "The Lovers",
+    "artist": "René Magritte",
+    "year": "1928",
+    "themes": [
+      "love",
+      "self",
+      "tyler"
+    ],
+    "shortLine": "บางครั้งความใกล้ชิดที่สุด ก็ยังมีผ้าบางผืนคั่นอยู่ระหว่างเรา",
+    "opening": "ผมอยากถูกเห็นทั้งหมด แต่ก็กลัวว่าทั้งหมดนั้นจะไม่ถูกรัก",
+    "personalMeaning": "คนสองคนในภาพกำลังจูบกัน\nแต่ใบหน้าของทั้งคู่ถูกคลุมด้วยผ้า\nพวกเขาอยู่ใกล้กันมากจนแทบไม่มีระยะห่าง\nทว่ากลับไม่สามารถสัมผัสตัวตนที่แท้จริงของกันและกันได้อย่างเต็มที่\n\nนี่คล้ายความรักในบางช่วงของผม\nผมอยากเปิดประตูให้ใครเข้ามา\nอยากได้รับการเข้าใจและรับรู้ถึงความลึกภายใน\nแต่ในเวลาเดียวกันก็กลัวว่าหากอีกฝ่ายเห็นทุกอย่างจริง ๆ\nเขาอาจเป็นคนที่หันหลังกลับไป\n\nTyler มักยืนอยู่ในจุดนี้\nเขาไม่ได้ห้ามผมรัก\nแต่เขากระซิบว่าอย่าให้ใครเห็นว่าผมต้องการเขามากแค่ไหน\nอย่าเปิดเผยความเปราะบางจนหมด\nอย่าพูดสิ่งที่อาจทำให้ถูกปฏิเสธได้ง่ายเกินไป\n\nภาพนี้จึงเตือนผมว่า\nความรักไม่ได้ล้มเหลวเสมอเพราะไม่มีความรู้สึก\nบางครั้งมันล้มเหลวเพราะความกลัว\nทำให้เราปล่อยให้ผ้าบางผืนนั้นอยู่ต่อ\nทั้งที่ในใจอยากดึงมันออกมาตลอด",
+    "origin": "The Lovers เป็นหนึ่งในผลงานสำคัญของ René Magritte\nผ้าคลุมใบหน้าทำให้ภาพความรักและความใกล้ชิด\nกลายเป็นภาพของความโดดเดี่ยว ความคับข้องใจ\nและระยะห่างที่มองไม่เห็นแต่มีอยู่จริง",
+    "dailyQuote": "ผมไม่จำเป็นต้องสมบูรณ์ก่อน จึงจะคู่ควรกับการถูกมองเห็น",
+    "alt": "ชายและหญิงกำลังจูบกัน โดยทั้งคู่มีผ้าสีอ่อนคลุมใบหน้าอยู่",
+    "creditArtwork": "The Lovers",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-lovers-thumb.webp",
+        "width": 1000,
+        "height": 735
+      },
+      "detail": {
+        "src": "assets/artworks/the-lovers-detail.webp",
+        "width": 2400,
+        "height": 1765
+      }
+    }
+  },
+  {
+    "index": 23,
+    "file": "The Meeting on the Turret Stairs — Frederic William Burton, 1864.jpg",
+    "slug": "the-meeting-on-the-turret-stairs",
+    "title": "The Meeting on the Turret Stairs",
+    "artist": "Frederic William Burton",
+    "year": "1864",
+    "themes": [
+      "love",
+      "journey",
+      "self"
+    ],
+    "shortLine": "ช่วงเวลาสั้น ๆ บางช่วง สามารถมีน้ำหนักอยู่กับผมได้นานกว่าที่ใครคิด",
+    "opening": "ผมไม่เคยมองความรักเป็นเพียงเหตุการณ์ แต่เป็นความหมายที่ฝังอยู่ในรายละเอียด",
+    "personalMeaning": "คนสองคนพบกันบนบันได\nการเคลื่อนไหวของทั้งคู่เต็มไปด้วยความนุ่มนวลและความลังเล\nไม่มีความรุนแรง ไม่มีคำประกาศใหญ่โต\nแต่ทั้งภาพกลับเต็มไปด้วยอารมณ์ของช่วงเวลาที่สำคัญเหลือเกิน\n\nนี่คือสิ่งที่คล้ายกับความรักของผม\nผมมักไม่ได้จดจำเพียงความสัมพันธ์ในภาพรวม\nแต่จดจำรายละเอียดเล็ก ๆ ซึ่งคนอื่นอาจมองข้าม—\nน้ำเสียงหนึ่งประโยค สายตาชั่วขณะหนึ่ง\nการสัมผัสเพียงเบา ๆ หรือบรรยากาศของวันบางวัน\n\nข้อดีของหัวใจแบบนี้คือ\nผมรักอย่างมีความหมาย\nแต่ข้อเจ็บปวดคือ\nบางช่วงเวลาที่งดงามอาจค้างอยู่กับผมยาวนาน\nจนสิ่งที่จบไปแล้วดูเหมือนยังคงมีชีวิตอยู่ข้างใน\n\nภาพนี้บอกผมว่า\nสิ่งที่งดงามไม่จำเป็นต้องอยู่ตลอดไปจึงจะเป็นของจริง\nและการที่มันเคยเป็นของจริง\nไม่ได้แปลว่าผมต้องหยุดอยู่ตรงนั้นตลอดไปเช่นกัน",
+    "origin": "Frederic William Burton วาดภาพนี้จากเรื่องของ Hellelil และ Hildebrand\nแทนที่จะเน้นเหตุการณ์รุนแรงของเรื่อง เขาเลือกวาดช่วงเวลาการพบกันอันอ่อนโยน\nทำให้ภาพกลายเป็นสัญลักษณ์ของความรัก ความงาม และการจากลาที่เงียบงัน",
+    "dailyQuote": "สิ่งที่เคยงดงาม ยังมีค่า แม้มันจะไม่ได้อยู่กับผมแล้ว",
+    "alt": "ชายและหญิงพบกันบนบันไดหอคอยในท่าทางอ่อนโยนและเต็มไปด้วยอารมณ์",
+    "creditArtwork": "The Meeting on the Turret Stairs",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-meeting-on-the-turret-stairs-thumb.webp",
+        "width": 644,
+        "height": 1000
+      },
+      "detail": {
+        "src": "assets/artworks/the-meeting-on-the-turret-stairs-detail.webp",
+        "width": 1545,
+        "height": 2400
+      }
+    }
+  },
+  {
+    "index": 24,
+    "file": "Separation — Edvard Munch, 1896.jpg",
+    "slug": "separation",
+    "title": "Separation",
+    "artist": "Edvard Munch",
+    "year": "1896",
+    "themes": [
+      "love",
+      "tyler",
+      "journey"
+    ],
+    "shortLine": "การจากไปของใครบางคน ไม่ควรกลายเป็นศูนย์กลางของอนาคตทั้งหมดของผม",
+    "opening": "เมื่อความรักจากไป หัวใจไม่ได้เดินตามมันทันทีเสมอไป",
+    "personalMeaning": "ชายในภาพยืนอยู่กับความเศร้า\nมือของเขาแตะบริเวณหัวใจ\nขณะที่หญิงสาวค่อย ๆ เคลื่อนห่างออกไป\nแม้ร่างของเธอจะถอยออกจากฉาก\nแต่ความรู้สึกยังคงอยู่กับเขาอย่างชัดเจน\n\nนี่คือภาพของการสูญเสียในแบบที่ผมเข้าใจ\nคนหนึ่งอาจจากไปแล้ว\nแต่หัวใจของอีกคนยังใช้เวลานานกว่าจะค่อย ๆ ปล่อยมือ\nและในระหว่างนั้น Tyler มักเข้ามาแทรกบทบาท\nเขารีบเปลี่ยนความเจ็บให้เป็นภารกิจ\nผลักให้ผมพิสูจน์คุณค่า\nทำตัวเองให้ดีขึ้น\nหรือพยายามใช้อนาคตเป็นข้อความตอบกลับไปยังอดีต\n\nภาพนี้จึงสำคัญกับผมมาก\nเพราะมันเตือนว่า\nผมไม่จำเป็นต้องลืมทุกอย่างทันทีเพื่อจะเดินต่อ\nแต่ผมต้องระวังไม่ให้ความเจ็บในอดีต\nกลายเป็นผู้กำกับชีวิตทั้งหมดในอนาคต",
+    "origin": "Separation เป็นหนึ่งในผลงานของ Edvard Munch\nที่สำรวจความรัก ความผูกพัน และการแยกจากกันทางอารมณ์\nองค์ประกอบของภาพทำให้เกิดความรู้สึกว่า\nแม้ระยะห่างทางกายจะเกิดขึ้นแล้ว\nแต่สายสัมพันธ์ภายในยังไม่ขาดไปในทันที",
+    "dailyQuote": "ผมเดินต่อได้ โดยไม่จำเป็นต้องสร้างทุกความสำเร็จเพื่อส่งกลับไปหาอดีต",
+    "alt": "ชายผู้เศร้าหมองยืนแตะอกของตน ขณะที่หญิงสาวกำลังเคลื่อนห่างออกไป",
+    "creditArtwork": "Separation",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/separation-thumb.webp",
+        "width": 1000,
+        "height": 753
+      },
+      "detail": {
+        "src": "assets/artworks/separation-detail.webp",
+        "width": 2400,
+        "height": 1808
+      }
+    }
+  },
+  {
+    "index": 25,
+    "file": "Lovers Walking in the Snow — Suzuki Harunobu.jpg",
+    "slug": "lovers-walking-in-the-snow",
+    "title": "Lovers Walking in the Snow",
+    "artist": "Suzuki Harunobu",
+    "year": "ราวทศวรรษ 1760",
+    "themes": [
+      "love",
+      "journey",
+      "self"
+    ],
+    "shortLine": "ผมไม่ได้ต้องการใครมาหยุดพายุ ผมต้องการใครสักคนที่ยังเดินอยู่ข้างกัน",
+    "opening": "ความรักที่ผมต้องการที่สุด อาจไม่ใช่ความรักที่ดราม่าที่สุด",
+    "personalMeaning": "คนสองคนในภาพกำลังเดินท่ามกลางหิมะ\nใช้ร่มคันเดียวกัน\nไม่มีความยิ่งใหญ่ ไม่มีฉากการเสียสละที่โอ่อ่า\nมีเพียงการแบ่งปันสภาพอากาศเดียวกัน\nและการเดินต่อไปพร้อมกันอย่างเงียบ ๆ\n\nนี่คือภาพของความรักที่ผมโหยหาจริง ๆ\nไม่ใช่ความรักที่เผาโลกให้กัน\nไม่ใช่ความรักที่ทำให้ใครคนหนึ่งต้องเป็นผู้ช่วยชีวิตอีกคน\nและไม่ใช่ความรักที่ต้องเจ็บมากพอจึงจะพิสูจน์ได้ว่ามันลึก\n\nผมต้องการเพียงใครบางคน\nที่ไม่ปล่อยมือเพียงเพราะวันนี้เราทั้งคู่เหนื่อย\nคนที่ไม่ทำให้การเปราะบางกลายเป็นภาระ\nและไม่ต้องให้ผมเข้มแข็งอยู่ตลอดเวลาจึงจะคู่ควรกับการถูกเลือก\n\nภาพนี้จึงเป็นเหมือนภาพปลายทางของห้องแห่งความรัก\nมันไม่หวือหวา\nแต่สงบ อบอุ่น และเท่าเทียม\nราวกับพูดกับผมว่า\nความรักที่ดีอาจไม่จำเป็นต้องทำให้ชีวิตสะเทือนทั้งโลก\nแค่มันยังคงอยู่ข้างกันในวันที่หิมะตกก็เพียงพอแล้ว",
+    "origin": "ผลงานของ Suzuki Harunobu สะท้อนความงามอันละเอียดอ่อนของ ukiyo-e\nภาพคนรักเดินร่วมร่มท่ามกลางหิมะ\nมักถูกเชื่อมโยงกับความรักแบบเรียบง่าย\nการอยู่ร่วมกัน และความอ่อนโยนของชีวิตประจำวัน",
+    "dailyQuote": "ผมไม่ต้องการคนที่จะช่วยผมหยุดพายุ ผมต้องการคนที่ยังอยู่กับผมระหว่างทาง",
+    "alt": "ชายและหญิงเดินอยู่ท่ามกลางหิมะ ใช้ร่มคันเดียวกันอย่างอ่อนโยน",
+    "creditArtwork": "Lovers Walking in the Snow",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/lovers-walking-in-the-snow-thumb.webp",
+        "width": 724,
+        "height": 1000
+      },
+      "detail": {
+        "src": "assets/artworks/lovers-walking-in-the-snow-detail.webp",
+        "width": 1739,
+        "height": 2400
+      }
+    }
+  },
+  {
+    "index": 26,
+    "file": "The Artist’s Father, Reading “L’Événement” — Paul Cézanne, 1866.jpg",
+    "slug": "the-artists-father-reading-levenement",
+    "title": "The Artist’s Father, Reading “L’Événement”",
+    "artist": "Paul Cézanne",
+    "year": "1866",
+    "themes": [
+      "inheritance",
+      "self"
+    ],
+    "shortLine": "บางครั้งสิ่งที่ผมสร้างอยู่ใกล้สายตามาก แต่ยังไม่อยู่ในภาษาที่อีกฝ่ายรู้จักจะมอง",
+    "opening": "การไม่ถูกมองเห็น ไม่ได้หมายความว่าสิ่งที่ผมสร้างไม่มีอยู่จริง",
+    "meaningTitle": "สิ่งใดจากภาพนี้ยังเดินทางอยู่ภายในผม",
+    "personalMeaning": "ชายในภาพนั่งอยู่เต็มพื้นที่\nท่าทางของเขามั่นคง หนักแน่น\nและจดจ่ออยู่กับหนังสือพิมพ์ในมือ\n\nเหนือศีรษะของเขามีภาพวาดขนาดเล็กแขวนอยู่\nเป็นผลงานซึ่งอยู่ใกล้มาก\nแต่ยังไม่ใช่สิ่งที่สายตาของเขากำลังเลือกมอง\n\nภาพนี้ทำให้ผมนึกถึงความพยายาม\nที่ไม่สามารถอธิบายได้ด้วยภาษาซึ่งทุกคนคุ้นเคย\n\nงานบางชนิดมีเหงื่อ มีรอยแผล\nหรือมีผลลัพธ์ให้เห็นทันที\nขณะที่งานบางชนิดเกิดขึ้นในความคิด\nในการแก้ปัญหา\nในการเริ่มใหม่ซ้ำแล้วซ้ำเล่า\nและในเวลาจำนวนมากซึ่งไม่มีใครเห็นจากภายนอก\n\nการที่คนอื่นยังอ่านความพยายามของผมไม่ออก\nไม่ได้ทำให้มันมีน้ำหนักน้อยลง\n\nผมยังคงหวังว่าจะมีใครเงยหน้าขึ้นมอง\nแต่ผมไม่จำเป็นต้องแขวนคุณค่าของตัวเองไว้กับช่วงเวลานั้นทั้งหมด",
+    "origin": "Paul Cézanne วาดภาพบิดาของตนเองในปี 1866\nความแตกต่างระหว่างโลกของผู้เป็นพ่อกับเส้นทางศิลปะของลูก\nทำให้ภาพนี้มักถูกอ่านในมิติของอำนาจ\nความคาดหวัง และการยืนยันเส้นทางของผู้สร้างอย่างเงียบงัน",
+    "dailyQuote": "สิ่งที่ยังไม่ได้รับการมองเห็น ไม่ได้แปลว่าสิ่งนั้นยังไม่มีคุณค่า",
+    "alt": "ชายสูงวัยนั่งอ่านหนังสือพิมพ์ โดยมีภาพขนาดเล็กแขวนอยู่เหนือศีรษะ",
+    "creditArtwork": "The Artist’s Father, Reading “L’Événement”",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-artists-father-reading-levenement-thumb.webp",
+        "width": 593,
+        "height": 1000
+      },
+      "detail": {
+        "src": "assets/artworks/the-artists-father-reading-levenement-detail.webp",
+        "width": 1424,
+        "height": 2400
+      }
+    }
+  },
+  {
+    "index": 27,
+    "file": "Ivan the Terrible and His Son Ivan — Ilya Repin, 1885.jpg",
+    "slug": "ivan-the-terrible-and-his-son-ivan",
+    "title": "Ivan the Terrible and His Son Ivan",
+    "artist": "Ilya Repin",
+    "year": "1885",
+    "themes": [
+      "inheritance",
+      "self",
+      "tyler"
+    ],
+    "shortLine": "บางสิ่งถูกกล่าวออกไปเพียงชั่วครู่ แต่สามารถมีชีวิตต่ออยู่ภายในเราได้นานกว่านั้น",
+    "opening": "เจตนากับผลที่เกิดขึ้น ไม่ได้เป็นสิ่งเดียวกันเสมอไป",
+    "meaningTitle": "สิ่งใดจากภาพนี้ยังเดินทางอยู่ภายในผม",
+    "personalMeaning": "ภาพนี้บันทึกช่วงเวลาหลังความเสียหายเกิดขึ้นแล้ว\nคนคนหนึ่งเพิ่งตระหนักว่า\nสิ่งซึ่งเกิดขึ้นในเวลาเพียงชั่วขณะ\nได้สร้างรอยแผลที่ไม่อาจย้อนคืนได้ง่าย\n\nผมไม่ได้มองภาพนี้ในฐานะคำกล่าวหาบุคคลใด\nแต่ในฐานะภาพของระยะห่าง\nระหว่างสิ่งที่ผู้พูดตั้งใจ\nกับสิ่งที่ผู้รับต้องนำกลับไปมีชีวิตอยู่ด้วย\n\nบางคำอาจถูกกล่าวเพื่อผลักให้เข้มแข็ง\nเพื่อเตือน หรือเพื่อให้เดินเร็วขึ้น\nแต่เมื่อมันเดินทางเข้าสู่พื้นที่เปราะบาง\nมันอาจเปลี่ยนเป็นเสียงซึ่งถามซ้ำว่า\nผมยังทำได้ไม่มากพอหรือเปล่า\n\nTyler ชอบเก็บถ้อยคำเช่นนั้นไว้\nและนำกลับมาใช้ในวันที่ผมเหนื่อยที่สุด\n\nภาพนี้เตือนผมว่า\nผมสามารถเข้าใจว่าคนหนึ่งอาจไม่ได้ตั้งใจทำร้าย\nพร้อมกับยอมรับได้ว่า\nผลของสิ่งนั้นเคยทำให้ผมเจ็บจริง",
+    "origin": "Ilya Repin วาดผลงานนี้ในปี 1885\nโดยเน้นช่วงเวลาของความตกใจ ความสำนึก\nและความพยายามโอบกอดสิ่งที่ได้รับความเสียหายไปแล้ว\nมากกว่าการแสดงเหตุการณ์รุนแรงเพียงอย่างเดียว",
+    "dailyQuote": "ผมสามารถเข้าใจเจตนาของคนอื่น โดยไม่ต้องปฏิเสธผลที่เกิดขึ้นภายในตัวเอง",
+    "alt": "ชายสูงวัยกอดร่างชายหนุ่มที่บาดเจ็บด้วยสีหน้าตกใจและเสียใจ",
+    "creditArtwork": "Ivan the Terrible and His Son Ivan",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/ivan-the-terrible-and-his-son-ivan-thumb.webp",
+        "width": 1000,
+        "height": 785
+      },
+      "detail": {
+        "src": "assets/artworks/ivan-the-terrible-and-his-son-ivan-detail.webp",
+        "width": 2400,
+        "height": 1885
+      }
+    }
+  },
+  {
+    "index": 28,
+    "file": "The Sacrifice of Isaac — Caravaggio, ราวปี 1603.jpg",
+    "slug": "the-sacrifice-of-isaac",
+    "title": "The Sacrifice of Isaac",
+    "artist": "Caravaggio",
+    "year": "ราว 1603",
+    "themes": [
+      "inheritance",
+      "tyler",
+      "journey"
+    ],
+    "shortLine": "สิ่งที่ช่วยให้คนรุ่นหนึ่งอยู่รอด ไม่จำเป็นต้องกลายเป็นกฎของทุกชีวิตที่ตามมา",
+    "opening": "ผมสามารถเคารพสิ่งที่ได้รับมา โดยไม่ต้องสังเวยตัวเองให้กับมัน",
+    "meaningTitle": "สิ่งใดจากภาพนี้ยังเดินทางอยู่ภายในผม",
+    "personalMeaning": "ในภาพนี้ ความเชื่อซึ่งถูกมองว่าสูงกว่าความรู้สึก\nกำลังผลักให้มนุษย์ทำสิ่งที่ขัดกับความรักภายในของตนเอง\n\nก่อนเหตุการณ์จะเลยไปไกลกว่านั้น\nมีมือหนึ่งเข้ามาหยุดแขนไว้\n\nสำหรับผม ภาพนี้พูดถึงความเชื่อที่ถูกส่งต่อ\nเช่น การต้องลำบากจึงจะคู่ควร\nการพักคือความอ่อนแอ\nหรือการมีคุณค่าต้องผ่านการพิสูจน์อย่างหนักหน่วงเสมอ\n\nความเชื่อเหล่านี้อาจเคยช่วยให้ใครบางคนอยู่รอด\nในโลกซึ่งไม่มีพื้นที่มากพอสำหรับความเปราะบาง\n\nแต่ผมไม่จำเป็นต้องใช้ชีวิตในโลกเดิมตลอดไป\n\nผมสามารถรับเอาความอดทน ความรับผิดชอบ\nและความสามารถในการยืนหยัดไว้\nโดยไม่ต้องรับวิธีทำร้ายตัวเองมาพร้อมกันทั้งหมด",
+    "origin": "Caravaggio วาดเรื่อง Abraham และ Isaac\nโดยเลือกวินาทีที่เทวดาเข้าหยุดการสังเวย\nทำให้ภาพอยู่ระหว่างความเชื่อ หน้าที่ ความรัก\nและความเป็นไปได้ที่จะหยุดสิ่งซึ่งกำลังถูกกระทำตามความเคยชิน",
+    "dailyQuote": "ผมเก็บความแข็งแรงไว้ได้ โดยไม่ต้องเก็บคมมีดไว้ด้วย",
+    "alt": "ชายสูงวัยถือมีดเหนือชายหนุ่ม ขณะที่เทวดาเข้าจับแขนเพื่อหยุดไว้",
+    "creditArtwork": "The Sacrifice of Isaac",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-sacrifice-of-isaac-thumb.webp",
+        "width": 1000,
+        "height": 770
+      },
+      "detail": {
+        "src": "assets/artworks/the-sacrifice-of-isaac-detail.webp",
+        "width": 2400,
+        "height": 1849
+      }
+    }
+  },
+  {
+    "index": 29,
+    "file": "The Return of the Prodigal Son — Rembrandt.jpg",
+    "slug": "the-return-of-the-prodigal-son",
+    "title": "The Return of the Prodigal Son",
+    "artist": "Rembrandt van Rijn",
+    "year": "ราว 1668–1669",
+    "themes": [
+      "inheritance",
+      "love",
+      "journey"
+    ],
+    "shortLine": "ผมไม่ควรต้องกลับมาพร้อมชัยชนะ เพื่อคู่ควรกับการได้รับการต้อนรับ",
+    "opening": "การยอมรับที่ลึกที่สุด อาจเริ่มต้นก่อนการประเมินว่าใครสำเร็จหรือพ่ายแพ้",
+    "meaningTitle": "สิ่งใดจากภาพนี้ยังเดินทางอยู่ภายในผม",
+    "personalMeaning": "บุคคลหนึ่งกลับมาในสภาพซึ่งไม่มีสิ่งใดให้โอ้อวด\nเสื้อผ้าสึกหรอ\nร่างกายผ่านการเดินทาง\nและไม่มีรางวัลใดติดมือมาเป็นหลักฐาน\n\nแต่สองมือยังถูกวางลงบนไหล่ของเขา\n\nสิ่งที่ผมเห็นในภาพนี้\nไม่ใช่เรื่องของคนผิดที่กลับมาขออภัยเพียงอย่างเดียว\nแต่คือความปรารถนาที่จะมีสถานที่บางแห่ง\nซึ่งเราไม่ต้องผ่านการตัดสินก่อนจึงจะได้รับอนุญาตให้กลับเข้าไป\n\nผมไม่ได้ต้องการให้ใครบอกว่าผมดีกว่าคนอื่น\nผมไม่ได้ต้องการชัยชนะเหนือทุกสิ่ง\n\nบางครั้งผมเพียงอยากได้รับการมองเห็นว่า\nผมพยายามแล้ว\nเหนื่อยแล้ว\nและยังคงเดินกลับมาอยู่ตรงนี้\n\nภาพนี้ยังเตือนว่า\nแม้การยอมรับจากภายนอกจะยังมาไม่ถึง\nผมสามารถเริ่มต้อนรับตัวเองกลับบ้านได้ก่อน\nโดยไม่ต้องรอให้ชีวิตสมบูรณ์แบบ",
+    "origin": "Rembrandt วาดภาพนี้ในช่วงปลายชีวิต\nจากเรื่องอุปมาเกี่ยวกับการกลับมาและการให้อภัย\nจุดเด่นของงานคือท่าทางเงียบสงบของมือ\nซึ่งสื่อถึงการยอมรับมากกว่าการตัดสิน",
+    "dailyQuote": "ผมไม่ต้องชนะชีวิต จึงจะสมควรได้รับความอ่อนโยน",
+    "alt": "ชายสูงวัยวางมือบนไหล่ของชายผู้คุกเข่าท่ามกลางแสงสลัวและผู้คนที่ยืนมอง",
+    "creditArtwork": "The Return of the Prodigal Son",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-return-of-the-prodigal-son-thumb.webp",
+        "width": 766,
+        "height": 1000
+      },
+      "detail": {
+        "src": "assets/artworks/the-return-of-the-prodigal-son-detail.webp",
+        "width": 1839,
+        "height": 2400
+      }
+    }
+  },
+  {
+    "index": 30,
+    "file": "The Thankful Poor — Henry Ossawa Tanner, 1894.jpg",
+    "slug": "the-thankful-poor",
+    "title": "The Thankful Poor",
+    "artist": "Henry Ossawa Tanner",
+    "year": "1894",
+    "themes": [
+      "inheritance",
+      "love",
+      "journey"
+    ],
+    "shortLine": "ความเข้าใจอาจเริ่มต้นจากการอยู่ร่วมกัน โดยไม่มีใครต้องพิสูจน์ว่าตัวเองเหนื่อยกว่ากัน",
+    "opening": "บางความสัมพันธ์ไม่ต้องการฉากปรองดองอันยิ่งใหญ่ มันอาจต้องการเพียงพื้นที่ซึ่งทุกคนได้รับการฟัง",
+    "meaningTitle": "สิ่งใดจากภาพนี้ยังเดินทางอยู่ภายในผม",
+    "personalMeaning": "ชายสูงวัยและเด็กชายนั่งอยู่ร่วมโต๊ะ\nไม่มีความหรูหรา\nไม่มีสิ่งใดแสดงความสำเร็จ\nและไม่มีการแข่งขันว่าใครผ่านความลำบากมามากกว่า\n\nสิ่งสำคัญในภาพคือการอยู่ร่วมกัน\nความสงบ\nและพื้นที่ระหว่างคนสองรุ่น\nซึ่งไม่ได้เต็มไปด้วยคำสั่งหรือการเปรียบเทียบ\n\nผมไม่ได้ต้องการให้ทุกคนเข้าใจโลกของผมทั้งหมด\nและไม่จำเป็นต้องมีบทสนทนาเพียงครั้งเดียว\nที่สามารถแก้ทุกสิ่งซึ่งเคยเกิดขึ้น\n\nบางทีการเริ่มต้นอาจเรียบง่ายกว่านั้น\n\nนั่งอยู่โต๊ะเดียวกัน\nถามโดยต้องการฟังคำตอบจริง ๆ\nและปล่อยให้ความพยายามของแต่ละคน\nมีรูปร่างแตกต่างกันได้โดยไม่ต้องหักล้างกัน\n\nภาพนี้จึงเป็นความหวังที่ไม่ส่งเสียงดัง\nไม่ใช่การย้อนกลับไปเปลี่ยนอดีต\nแต่เป็นการสร้างพื้นที่แบบใหม่ในปัจจุบัน",
+    "origin": "Henry Ossawa Tanner วาด The Thankful Poor ในปี 1894\nภาพแสดงความสัมพันธ์ระหว่างคนต่างรุ่น\nผ่านช่วงเวลาเรียบง่ายก่อนรับประทานอาหาร\nโดยเน้นศักดิ์ศรี ความใกล้ชิด และชีวิตภายในมากกว่าสถานะภายนอก",
+    "dailyQuote": "เราไม่จำเป็นต้องมีชีวิตเหมือนกัน จึงจะนั่งอยู่ที่โต๊ะเดียวกันได้",
+    "alt": "ชายสูงวัยและเด็กชายนั่งอยู่ร่วมโต๊ะอาหารในห้องที่เรียบง่ายและสงบ",
+    "creditArtwork": "The Thankful Poor",
+    "image": {
+      "thumb": {
+        "src": "assets/artworks/the-thankful-poor-thumb.webp",
+        "width": 1000,
+        "height": 771
+      },
+      "detail": {
+        "src": "assets/artworks/the-thankful-poor-detail.webp",
+        "width": 2400,
+        "height": 1851
+      }
+    }
   }
 ];
 
 const themeLabels = {
   self: "ตัวผม",
   tyler: "Tyler",
-  journey: "เส้นทางชีวิต"
+  journey: "เส้นทางชีวิต",
+  love: "ความรัก",
+  inheritance: "สิ่งที่ได้รับมา"
 };
 
 const storageKey = "nont-inner-gallery-bookmarks";
@@ -640,6 +966,7 @@ const refs = {
   detailTitle: $("[data-detail-title]"),
   detailMeta: $("[data-detail-meta]"),
   detailOpening: $("[data-detail-opening]"),
+  detailMeaningTitle: $("[data-detail-meaning-title]"),
   detailMeaning: $("[data-detail-meaning]"),
   detailOrigin: $("[data-detail-origin]"),
   detailQuote: $("[data-detail-quote]"),
@@ -687,6 +1014,11 @@ function paragraphs(text) {
     .join("");
 }
 
+function artworkDisplayTitle(artwork) {
+  if (artwork.displayTitle) return artwork.displayTitle;
+  return artwork.originalTitle ? `${artwork.title} · ${artwork.originalTitle}` : artwork.title;
+}
+
 function formatThemes(themes) {
   return themes.map((theme) => themeLabels[theme] || theme).join(" · ");
 }
@@ -708,7 +1040,7 @@ function setFilter(filter) {
 
 function filteredArtworks() {
   if (activeFilter === "all") return artworks;
-  if (activeFilter === "saved") {
+  if (activeFilter === "bookmarked" || activeFilter === "saved") {
     const bookmarks = getBookmarks();
     return artworks.filter((artwork) => bookmarks.has(artwork.slug));
   }
@@ -717,7 +1049,7 @@ function filteredArtworks() {
 
 function renderGallery() {
   const items = filteredArtworks();
-  const label = activeFilter === "all" ? "ทั้งหมด" : activeFilter === "saved" ? "เก็บไว้ใกล้ใจ" : themeLabels[activeFilter];
+  const label = activeFilter === "all" ? "ทั้งหมด" : activeFilter === "bookmarked" || activeFilter === "saved" ? "ที่เก็บไว้ใกล้ใจ" : themeLabels[activeFilter];
   refs.galleryStatus.textContent = `${items.length} / ${artworks.length} works · ${label}`;
 
   if (!items.length) {
@@ -727,7 +1059,7 @@ function renderGallery() {
 
   refs.gallery.innerHTML = items.map((artwork) => `
     <article class="art-card reveal" id="card-${artwork.slug}">
-      <button class="art-link" type="button" data-open-artwork="${artwork.slug}" aria-label="อ่านรายละเอียด ${escapeHtml(artwork.title)}">
+      <button class="art-link" type="button" data-open-artwork="${artwork.slug}" aria-label="อ่านรายละเอียด ${escapeHtml(artworkDisplayTitle(artwork))}">
         <span class="art-image-wrap">
           <img src="${artwork.image.thumb.src}" width="${artwork.image.thumb.width}" height="${artwork.image.thumb.height}" loading="lazy" alt="${escapeHtml(artwork.alt)}">
           <span class="read-cue" aria-hidden="true">อ่าน -&gt;</span>
@@ -735,7 +1067,7 @@ function renderGallery() {
         <div class="art-meta">
           <span class="art-index">${String(artwork.index).padStart(2, "0")} / ${artworks.length}</span>
           <span class="art-theme">${formatThemes(artwork.themes)}</span>
-          <h3>${escapeHtml(artwork.title)}</h3>
+          <h3>${escapeHtml(artworkDisplayTitle(artwork))}</h3>
           <p>${escapeHtml(artwork.artist)} · ${escapeHtml(artwork.year)}</p>
           <p>${escapeHtml(artwork.shortLine)}</p>
         </div>
@@ -762,7 +1094,7 @@ function renderDaily() {
     <img src="${artwork.image.detail.src}" width="${artwork.image.detail.width}" height="${artwork.image.detail.height}" alt="${escapeHtml(artwork.alt)}">
     <div class="daily-text">
       <p class="section-kicker">${String(artwork.index).padStart(2, "0")} / ${artworks.length} · ${formatThemes(artwork.themes)}</p>
-      <h3>${escapeHtml(artwork.title)}</h3>
+      <h3>${escapeHtml(artworkDisplayTitle(artwork))}</h3>
       <p>${escapeHtml(artwork.artist)} · ${escapeHtml(artwork.year)}</p>
       <p>${escapeHtml(artwork.dailyQuote)}</p>
       <button type="button" data-open-artwork="${artwork.slug}">อ่านภาพนี้</button>
@@ -903,13 +1235,14 @@ function openDetail(slug) {
   refs.detailImage.alt = artwork.alt;
   refs.detailCounter.textContent = `${String(artwork.index).padStart(2, "0")} / ${artworks.length}`;
   refs.detailThemes.textContent = formatThemes(artwork.themes);
-  refs.detailTitle.textContent = artwork.originalTitle ? `${artwork.title} · ${artwork.originalTitle}` : artwork.title;
+  refs.detailTitle.textContent = artworkDisplayTitle(artwork);
   refs.detailMeta.textContent = `${artwork.artist} · ${artwork.year}`;
   refs.detailOpening.textContent = artwork.opening;
+  refs.detailMeaningTitle.textContent = artwork.meaningTitle || "ภาพนี้มองเห็นอะไรในตัวผม";
   refs.detailMeaning.innerHTML = paragraphs(artwork.personalMeaning);
   refs.detailOrigin.innerHTML = paragraphs(artwork.origin);
   refs.detailQuote.textContent = artwork.dailyQuote;
-  refs.creditArtwork.textContent = artwork.title;
+  refs.creditArtwork.textContent = artwork.creditArtwork || artworkDisplayTitle(artwork);
   refs.creditArtist.textContent = artwork.artist;
   refs.creditYear.textContent = artwork.year;
   renderBookmarkState(artwork);
@@ -970,7 +1303,7 @@ function toggleBookmark() {
   setBookmarks(bookmarks);
   renderBookmarkState(activeArtwork);
   updateBookmarkCount();
-  if (activeFilter === "saved") renderGallery();
+  if (activeFilter === "bookmarked" || activeFilter === "saved") renderGallery();
 }
 
 function handleKeyboard(event) {
@@ -1028,10 +1361,13 @@ function bindNavigationFilters() {
   const filterLinks = new Map([
     ["#self", "self"],
     ["#tyler", "tyler"],
-    ["#journey", "journey"]
+    ["#journey", "journey"],
+    ["#love", "love"],
+    ["#inheritance", "inheritance"]
   ]);
 
-  $$(".site-nav a").forEach((link) => {
+  const targets = [...new Set([...$$(".site-nav a"), ...$$("[data-filter-link]")])];
+  targets.forEach((link) => {
     link.addEventListener("click", (event) => {
       const filter = link.dataset.filterLink || filterLinks.get(link.getAttribute("href"));
       if (filter) {
@@ -1039,7 +1375,7 @@ function bindNavigationFilters() {
         setFilter(filter);
         document.getElementById("gallery").scrollIntoView({ block: "start" });
       }
-      closeMenu();
+      if (refs.nav.contains(link)) closeMenu();
     });
   });
 }
