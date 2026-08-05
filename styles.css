@@ -500,6 +500,22 @@ h3 {
   border: 1px solid rgba(242, 239, 228, .18);
 }
 
+.detail-panel.is-image-expanded {
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+}
+
+.detail-panel.is-image-expanded .detail-copy {
+  display: none;
+}
+
+.detail-panel.is-image-expanded .detail-media {
+  padding: clamp(1rem, 2vw, 2.5rem);
+}
+
 .detail-media {
   position: relative;
   display: grid;
@@ -527,6 +543,7 @@ h3 {
   align-items: flex-start;
   justify-content: flex-start;
   cursor: grab;
+  touch-action: none;
 }
 
 .detail-image-stage.is-dragging {
@@ -562,6 +579,11 @@ h3 {
   border: 1px solid rgba(242, 239, 228, .18);
 }
 
+.zoom-toolbar input[type="range"] {
+  width: clamp(92px, 12vw, 180px);
+  accent-color: var(--gold);
+}
+
 .zoom-toolbar button {
   min-width: 38px;
   min-height: 38px;
@@ -582,6 +604,11 @@ h3 {
   color: rgba(242, 239, 228, .74);
   font-size: .82rem;
   text-align: center;
+}
+
+.detail-panel.is-image-expanded .zoom-toolbar {
+  right: 1rem;
+  top: 1rem;
 }
 
 .detail-copy {
@@ -755,6 +782,14 @@ h3 {
     height: min(62vh, 620px);
   }
 
+  .detail-panel.is-image-expanded {
+    overflow: hidden;
+  }
+
+  .detail-panel.is-image-expanded .detail-media {
+    height: 100vh;
+  }
+
   .detail-copy {
     overflow: visible;
   }
@@ -885,11 +920,19 @@ h3 {
   .zoom-toolbar {
     right: 1rem;
     top: 4.25rem;
+    left: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .zoom-toolbar button {
     min-width: 44px;
     min-height: 44px;
+  }
+
+  .zoom-toolbar input[type="range"] {
+    flex: 1 1 120px;
+    min-width: 120px;
   }
 
   .detail-copy {

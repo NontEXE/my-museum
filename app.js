@@ -615,6 +615,7 @@ let previousFocus = null;
 let scrollBeforeDetail = 0;
 let imageZoom = 1;
 let dragState = null;
+let imageExpanded = false;
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -625,11 +626,14 @@ const refs = {
   filters: $$("[data-filter]"),
   daily: $("[data-daily-artwork]"),
   detailLayer: $("[data-detail-layer]"),
+  detailPanel: $(".detail-panel"),
   zoomStage: $("[data-zoom-stage]"),
   detailImage: $("[data-detail-image]"),
   zoomInButton: $("[data-zoom-in]"),
   zoomOutButton: $("[data-zoom-out]"),
   zoomResetButton: $("[data-zoom-reset]"),
+  zoomExpandButton: $("[data-zoom-expand]"),
+  zoomSlider: $("[data-zoom-slider]"),
   zoomValue: $("[data-zoom-value]"),
   detailCounter: $("[data-detail-counter]"),
   detailThemes: $("[data-detail-themes]"),
@@ -797,21 +801,25 @@ function applyZoomSize() {
   image.style.width = `${displayWidth}px`;
   image.style.height = `${displayHeight}px`;
   refs.zoomValue.textContent = `${Math.round(imageZoom * 100)}%`;
+  refs.zoomSlider.value = imageZoom;
   refs.zoomStage.classList.toggle("is-zoomed", imageZoom > 1);
   refs.zoomOutButton.disabled = imageZoom <= 1;
   refs.zoomResetButton.disabled = imageZoom <= 1;
-  refs.zoomInButton.disabled = imageZoom >= 4;
+  refs.zoomInButton.disabled = imageZoom >= 6;
 }
 
-function setImageZoom(nextZoom) {
+function setImageZoom(nextZoom, origin = null) {
   if (!activeArtwork) return;
   const stage = refs.zoomStage;
+  const rect = typeof stage.getBoundingClientRect === "function" ? stage.getBoundingClientRect() : { left: 0, top: 0 };
   const previousWidth = Math.max(stage.scrollWidth, stage.clientWidth, 1);
   const previousHeight = Math.max(stage.scrollHeight, stage.clientHeight, 1);
-  const centerX = (stage.scrollLeft + stage.clientWidth / 2) / previousWidth;
-  const centerY = (stage.scrollTop + stage.clientHeight / 2) / previousHeight;
+  const anchorX = origin ? origin.clientX - rect.left : stage.clientWidth / 2;
+  const anchorY = origin ? origin.clientY - rect.top : stage.clientHeight / 2;
+  const ratioX = (stage.scrollLeft + anchorX) / previousWidth;
+  const ratioY = (stage.scrollTop + anchorY) / previousHeight;
 
-  imageZoom = Math.min(4, Math.max(1, Math.round(nextZoom * 4) / 4));
+  imageZoom = Math.min(6, Math.max(1, Math.round(nextZoom * 100) / 100));
   applyZoomSize();
 
   if (imageZoom === 1) {
@@ -820,8 +828,8 @@ function setImageZoom(nextZoom) {
   }
 
   requestAnimationFrame(() => {
-    stage.scrollLeft = Math.max(0, centerX * stage.scrollWidth - stage.clientWidth / 2);
-    stage.scrollTop = Math.max(0, centerY * stage.scrollHeight - stage.clientHeight / 2);
+    stage.scrollLeft = Math.max(0, ratioX * stage.scrollWidth - anchorX);
+    stage.scrollTop = Math.max(0, ratioY * stage.scrollHeight - anchorY);
   });
 }
 
@@ -856,6 +864,27 @@ function endImageDrag(event) {
   dragState = null;
 }
 
+function handleZoomWheel(event) {
+  if (!activeArtwork) return;
+  event.preventDefault();
+  const factor = event.deltaY < 0 ? 1.08 : 0.92;
+  setImageZoom(imageZoom * factor, event);
+}
+
+function setImageExpanded(expanded) {
+  imageExpanded = expanded;
+  refs.detailPanel.classList.toggle("is-image-expanded", imageExpanded);
+  refs.zoomExpandButton.setAttribute("aria-pressed", String(imageExpanded));
+  refs.zoomExpandButton.textContent = imageExpanded ? "ออก" : "เต็มภาพ";
+  refs.zoomExpandButton.setAttribute("aria-label", imageExpanded ? "ออกจากโหมดดูภาพเต็มพื้นที่" : "ดูภาพเต็มพื้นที่");
+  window.setTimeout(applyZoomSize, 0);
+  refs.zoomStage.focus({ preventScroll: true });
+}
+
+function toggleImageExpanded() {
+  setImageExpanded(!imageExpanded);
+}
+
 function openDetail(slug) {
   const artwork = bySlug.get(slug);
   if (!artwork) return;
@@ -866,6 +895,7 @@ function openDetail(slug) {
   }
 
   activeArtwork = artwork;
+  setImageExpanded(false);
   resetImageZoom();
   refs.detailImage.src = artwork.image.detail.src;
   refs.detailImage.width = artwork.image.detail.width;
@@ -899,6 +929,10 @@ function closeDetail(options = {}) {
   refs.detailImage.removeAttribute("src");
   refs.detailImage.removeAttribute("style");
   refs.zoomStage.classList.remove("is-zoomed", "is-dragging");
+  refs.detailPanel.classList.remove("is-image-expanded");
+  refs.zoomExpandButton.setAttribute("aria-pressed", "false");
+  refs.zoomExpandButton.textContent = "เต็มภาพ";
+  imageExpanded = false;
   dragState = null;
   document.body.classList.remove("detail-open");
 
@@ -943,6 +977,10 @@ function handleKeyboard(event) {
   if (!activeArtwork) return;
   if (event.key === "Escape") {
     event.preventDefault();
+    if (imageExpanded) {
+      setImageExpanded(false);
+      return;
+    }
     closeDetail();
   }
   if (event.key === "ArrowLeft") {
@@ -1026,11 +1064,15 @@ function init() {
   refs.zoomInButton.addEventListener("click", () => setImageZoom(imageZoom + 0.25));
   refs.zoomOutButton.addEventListener("click", () => setImageZoom(imageZoom - 0.25));
   refs.zoomResetButton.addEventListener("click", resetImageZoom);
+  refs.zoomExpandButton.addEventListener("click", toggleImageExpanded);
+  refs.zoomSlider.addEventListener("input", () => setImageZoom(Number(refs.zoomSlider.value)));
   refs.detailImage.addEventListener("load", applyZoomSize);
+  refs.detailImage.addEventListener("dblclick", toggleImageExpanded);
   refs.zoomStage.addEventListener("pointerdown", startImageDrag);
   refs.zoomStage.addEventListener("pointermove", moveImageDrag);
   refs.zoomStage.addEventListener("pointerup", endImageDrag);
   refs.zoomStage.addEventListener("pointercancel", endImageDrag);
+  refs.zoomStage.addEventListener("wheel", handleZoomWheel, { passive: false });
   refs.prevButton.addEventListener("click", () => navigateToArtwork(adjacentArtwork(-1).slug));
   refs.nextButton.addEventListener("click", () => navigateToArtwork(adjacentArtwork(1).slug));
   refs.menuToggle.addEventListener("click", () => {
