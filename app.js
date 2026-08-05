@@ -613,6 +613,8 @@ let activeFilter = "all";
 let activeArtwork = null;
 let previousFocus = null;
 let scrollBeforeDetail = 0;
+let imageZoom = 1;
+let dragState = null;
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -623,7 +625,12 @@ const refs = {
   filters: $$("[data-filter]"),
   daily: $("[data-daily-artwork]"),
   detailLayer: $("[data-detail-layer]"),
+  zoomStage: $("[data-zoom-stage]"),
   detailImage: $("[data-detail-image]"),
+  zoomInButton: $("[data-zoom-in]"),
+  zoomOutButton: $("[data-zoom-out]"),
+  zoomResetButton: $("[data-zoom-reset]"),
+  zoomValue: $("[data-zoom-value]"),
   detailCounter: $("[data-detail-counter]"),
   detailThemes: $("[data-detail-themes]"),
   detailTitle: $("[data-detail-title]"),
@@ -775,6 +782,80 @@ function renderBookmarkState(artwork) {
   refs.bookmarkButton.setAttribute("aria-label", saved ? "นำภาพนี้ออกจากรายการเก็บไว้ใกล้ใจ" : "เก็บภาพนี้ไว้ใกล้ใจ");
 }
 
+function applyZoomSize() {
+  if (!activeArtwork) return;
+  const stage = refs.zoomStage;
+  const image = refs.detailImage;
+  const naturalWidth = image.naturalWidth || activeArtwork.image.detail.width;
+  const naturalHeight = image.naturalHeight || activeArtwork.image.detail.height;
+  const stageWidth = Math.max(stage.clientWidth, 1);
+  const stageHeight = Math.max(stage.clientHeight, 1);
+  const fitScale = Math.min(stageWidth / naturalWidth, stageHeight / naturalHeight, 1);
+  const displayWidth = Math.round(naturalWidth * fitScale * imageZoom);
+  const displayHeight = Math.round(naturalHeight * fitScale * imageZoom);
+
+  image.style.width = `${displayWidth}px`;
+  image.style.height = `${displayHeight}px`;
+  refs.zoomValue.textContent = `${Math.round(imageZoom * 100)}%`;
+  refs.zoomStage.classList.toggle("is-zoomed", imageZoom > 1);
+  refs.zoomOutButton.disabled = imageZoom <= 1;
+  refs.zoomResetButton.disabled = imageZoom <= 1;
+  refs.zoomInButton.disabled = imageZoom >= 4;
+}
+
+function setImageZoom(nextZoom) {
+  if (!activeArtwork) return;
+  const stage = refs.zoomStage;
+  const previousWidth = Math.max(stage.scrollWidth, stage.clientWidth, 1);
+  const previousHeight = Math.max(stage.scrollHeight, stage.clientHeight, 1);
+  const centerX = (stage.scrollLeft + stage.clientWidth / 2) / previousWidth;
+  const centerY = (stage.scrollTop + stage.clientHeight / 2) / previousHeight;
+
+  imageZoom = Math.min(4, Math.max(1, Math.round(nextZoom * 4) / 4));
+  applyZoomSize();
+
+  if (imageZoom === 1) {
+    stage.scrollTo({ left: 0, top: 0 });
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    stage.scrollLeft = Math.max(0, centerX * stage.scrollWidth - stage.clientWidth / 2);
+    stage.scrollTop = Math.max(0, centerY * stage.scrollHeight - stage.clientHeight / 2);
+  });
+}
+
+function resetImageZoom() {
+  imageZoom = 1;
+  applyZoomSize();
+  refs.zoomStage.scrollTo({ left: 0, top: 0 });
+}
+
+function startImageDrag(event) {
+  if (imageZoom <= 1 || event.button !== 0) return;
+  dragState = {
+    pointerId: event.pointerId,
+    x: event.clientX,
+    y: event.clientY,
+    scrollLeft: refs.zoomStage.scrollLeft,
+    scrollTop: refs.zoomStage.scrollTop
+  };
+  refs.zoomStage.classList.add("is-dragging");
+  refs.zoomStage.setPointerCapture(event.pointerId);
+}
+
+function moveImageDrag(event) {
+  if (!dragState || dragState.pointerId !== event.pointerId) return;
+  refs.zoomStage.scrollLeft = dragState.scrollLeft - (event.clientX - dragState.x);
+  refs.zoomStage.scrollTop = dragState.scrollTop - (event.clientY - dragState.y);
+}
+
+function endImageDrag(event) {
+  if (!dragState || dragState.pointerId !== event.pointerId) return;
+  refs.zoomStage.classList.remove("is-dragging");
+  dragState = null;
+}
+
 function openDetail(slug) {
   const artwork = bySlug.get(slug);
   if (!artwork) return;
@@ -785,6 +866,7 @@ function openDetail(slug) {
   }
 
   activeArtwork = artwork;
+  resetImageZoom();
   refs.detailImage.src = artwork.image.detail.src;
   refs.detailImage.width = artwork.image.detail.width;
   refs.detailImage.height = artwork.image.detail.height;
@@ -805,6 +887,7 @@ function openDetail(slug) {
   refs.detailLayer.hidden = false;
   refs.detailLayer.setAttribute("aria-hidden", "false");
   document.body.classList.add("detail-open");
+  window.setTimeout(applyZoomSize, 0);
   window.setTimeout(() => refs.bookmarkButton.focus({ preventScroll: true }), 0);
 }
 
@@ -814,6 +897,9 @@ function closeDetail(options = {}) {
   refs.detailLayer.hidden = true;
   refs.detailLayer.setAttribute("aria-hidden", "true");
   refs.detailImage.removeAttribute("src");
+  refs.detailImage.removeAttribute("style");
+  refs.zoomStage.classList.remove("is-zoomed", "is-dragging");
+  dragState = null;
   document.body.classList.remove("detail-open");
 
   if (!options.fromHash && window.location.hash) {
@@ -866,6 +952,18 @@ function handleKeyboard(event) {
   if (event.key === "ArrowRight") {
     event.preventDefault();
     navigateToArtwork(adjacentArtwork(1).slug);
+  }
+  if (event.key === "+" || event.key === "=") {
+    event.preventDefault();
+    setImageZoom(imageZoom + 0.25);
+  }
+  if (event.key === "-") {
+    event.preventDefault();
+    setImageZoom(imageZoom - 0.25);
+  }
+  if (event.key === "0") {
+    event.preventDefault();
+    resetImageZoom();
   }
 }
 
@@ -925,6 +1023,14 @@ function init() {
   });
   refs.closeButtons.forEach((button) => button.addEventListener("click", () => closeDetail()));
   refs.bookmarkButton.addEventListener("click", toggleBookmark);
+  refs.zoomInButton.addEventListener("click", () => setImageZoom(imageZoom + 0.25));
+  refs.zoomOutButton.addEventListener("click", () => setImageZoom(imageZoom - 0.25));
+  refs.zoomResetButton.addEventListener("click", resetImageZoom);
+  refs.detailImage.addEventListener("load", applyZoomSize);
+  refs.zoomStage.addEventListener("pointerdown", startImageDrag);
+  refs.zoomStage.addEventListener("pointermove", moveImageDrag);
+  refs.zoomStage.addEventListener("pointerup", endImageDrag);
+  refs.zoomStage.addEventListener("pointercancel", endImageDrag);
   refs.prevButton.addEventListener("click", () => navigateToArtwork(adjacentArtwork(-1).slug));
   refs.nextButton.addEventListener("click", () => navigateToArtwork(adjacentArtwork(1).slug));
   refs.menuToggle.addEventListener("click", () => {
@@ -940,6 +1046,7 @@ function init() {
   window.addEventListener("scroll", () => {
     refs.backToTop.classList.toggle("is-visible", window.scrollY > 900);
   }, { passive: true });
+  window.addEventListener("resize", applyZoomSize);
 
   handleHash();
 }
